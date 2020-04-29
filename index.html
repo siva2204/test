@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>forty shades of grey</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="navbar">
+		<a href="#">FUN NUMBER GAMES</a>
+		<a class="active" href="" onclick="close()">EXIT</a>
+	</div>
+	<div class="middle-container">
+		<P id="show-theme">COME ON! CLICK THE NUMBERS IN ASCENDING ORDER..</P>
+	</div>
+	<div class="show-time">
+		<p><strong>Time :<span id="t">00.00</span></strong><strong style="float:right; ">Best Time :<span id="bt">00.00</span></strong></p>
+		
+	</div>
+	<div class="container" id="contain">
+
+		<div>
+			<marquee width="100%" direction="right" height="77px" scrollamount="13" >
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+			</marquee>
+		</div>
+		<div>
+			<marquee width="100%" direction="left" height="77px" scrollamount="13" >
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+			</marquee>
+		</div>
+		<div>
+			<marquee width="100%" direction="right" height="77px" scrollamount="13" >
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+			</marquee>
+		</div>
+		<div>
+			<marquee width="100%" direction="left" height="77px" scrollamount="13" >
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+				<button onclick="level3(this);sound();" class="grid-item"></button>
+			</marquee>
+		</div>
+		
+	</div>
+	<div class="top5" id="top-5">
+		<h2 style="margin-bottom: 0px;margin-top: 0px;">TOP 5 SCORES</h2>
+		<ul id="display5">
+			<li id="1">----</li>
+			<li id="2">----</li>
+			<li id="3">----</li>
+			<li id="4">----</li>
+			<li id="5">----</li>
+		</ul>
+		<button onclick="reload()">TRY AGAIN!</button>
+		
+	</div>		
+	
+	<script src="script.js"></script>
+
+
+</body>
+</html>
